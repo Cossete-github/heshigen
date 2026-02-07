@@ -93,7 +93,7 @@ document.querySelector('[seed="550"]'),
             a.value = '';
             evaluate();
         }, false);
-    const bs = () => {
+    const bs = e => {
         const s = a.value;
         if (!s) return;
         a.value = s.substring(0, s.length - 1);

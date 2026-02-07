@@ -1,0 +1,17 @@
+body {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+div[content]:not(.show){
+    display: none !important;
+}
+
+button {
+    margin-left: 0.5rem;
+}
+
+svg {
+    width: 2rem;
+    height: 2rem;
+}

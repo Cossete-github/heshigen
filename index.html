@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>兵士厳選</title>
+    <base target="_self" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <style>
+body {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+div[content]:not(.show){
+    display: none !important;
+}
+
+button {
+    margin-left: 0.5rem;
+}
+
+svg {
+    width: 2rem;
+    height: 2rem;
+}
+    </style>
+</head>
+
+<body>
+    <p>データ元：れあちぃさん</p>
+    <div>
+        <input type="text" id="arrows">
+        <div></div>
+        <svg id="arrow-up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+        </svg>
+        <svg id="arrow-right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+        </svg>
+        <svg id="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+        </svg>
+        <svg id="arrow-left" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+        </svg>
+            <button id="bs-button">1字削除</button><button id="clear-button">クリア</button>
+        <div>
+        </div>
+    </div>
+    <div>
+    </div>
+    <div content seed="510">
+        <hr>
+        <p>〇; [↑↓↑]</p>
+        <p>がいこつ3</p>
+    </div>
+    <div content seed="511">
+        <hr>
+        <p>×; [↓]</p>
+        <p>さま4</p>
+    </div>
+    <div content seed="512">
+        <hr>
+        <p>△; [←]; ブライHP38以上、すばやさ10以上</p>
+        <p>さま1ホイミ3</p>
+    </div>
+    <div content seed="513">
+        <hr>
+        <p>×; [↓←]</p>
+        <p>さま1さま3</p>
+    </div>
+    <div content seed="514">
+        <hr>
+        <p>×; [↓→↑]</p>
+        <p>さそ4</p>
+    </div>
+    <div content seed="515">
+        <hr>
+        <p>×; [→←]</p>
+        <p>さそ4</p>
+    </div>
+    <div content seed="516">
+        <hr>
+        <p>×; [←→↓]</p>
+        <p>さそ4</p>
+    </div>
+    <div content seed="517">
+        <hr>
+        <p>△; [←↑]; クリフトHP38以上、ブライHP28以上</p>
+        <p>がいこつ1</p>
+    </div>
+    <div content seed="518">
+        <hr>
+        <p>×; [←→]</p>
+        <p>さま1プテラ2</p>
+    </div>
+    <div content seed="519">
+        <hr>
+        <p>×; [↑↓]</p>
+        <p>さま2</p>
+    </div>
+    <div content seed="520">
+        <hr>
+        <p>〇; [↑↓]</p>
+        <p>さそ4</p>
+    </div>
+    <div content seed="521">
+        <hr>
+        <p>◎; [↑←]</p>
+        <p>さま1かま1</p>
+    </div>
+    <div content seed="522">
+        <hr>
+        <p>×; [←↑]</p>
+        <p>がいこつ1がいこつ1</p>
+    </div>
+    <div content seed="523">
+        <hr>
+        <p>◎; [↓↑]</p>
+        <p>メタ1</p>
+    </div>
+    <div content seed="524">
+        <hr>
+        <p>◎; [↓←]; ブライHP20以上</p>
+        <p>メタ1</p>
+    </div>
+    <div content seed="525">
+        <hr>
+        <p>×; [→↓]</p>
+        <p>メタ1</p>
+    </div>
+    <div content seed="526">
+        <hr>
+        <p>×; [→↓]</p>
+        <p>さま1さま1</p>
+    </div>
+    <div content seed="527">
+        <hr>
+        <p>△; [→↓]; アリーナすばやさ19以下、ブライHP32以上</p>
+        <p>がいこつ2</p>
+    </div>
+    <div content seed="528">
+        <hr>
+        <p>〇; [←↑→←]; クリフトHP45以上、すばやさ16以上</p>
+        <p>さま3ホイ1</p>
+    </div>
+    <div content seed="529">
+        <hr>
+        <p>×; [↓←]</p>
+        <p>さそ4</p>
+    </div>
+    <div content seed="530">
+        <hr>
+        <p>×; [↑→]</p>
+        <p>さま1がいこつ1</p>
+    </div>
+    <div content seed="531">
+        <hr>
+        <p>◎; [←↓]</p>
+        <p>さそ4</p>
+    </div>
+    <div content seed="532">
+        <hr>
+        <p>×; [↑→]</p>
+        <p>がいこつ3がいこつ1</p>
+    </div>
+    <div content seed="533">
+        <hr>
+        <p>×; [↓→]</p>
+        <p>メタ1</p>
+    </div>
+    <div content seed="534">
+        <hr>
+        <p>×; [↓→←]</p>
+        <p>プテラ1がいこつ3</p>
+    </div>
+    <div content seed="535">
+        <hr>
+        <p>◎; [↑→]</p>
+        <p>さま2ホイミ2</p>
+    </div>
+    <div content seed="536">
+        <hr>
+        <p>×; [→↑]</p>
+        <p>さま3ホイミ1</p>
+    </div>
+    <div content seed="537">
+        <hr>
+        <p>×; [→↑]</p>
+        <p>プテラ3プテラ1</p>
+    </div>
+    <div content seed="538">
+        <hr>
+        <p>×; [←↓]</p>
+        <p>がいこつ1かま1がいこつ1</p>
+    </div>
+    <div content seed="539">
+        <hr>
+        <p>×; [↓→]</p>
+        <p>がいこつ2</p>
+    </div>
+    <div content seed="540">
+        <hr>
+        <p>〇; [←↓]</p>
+        <p>さま1プテラ3</p>
+    </div>
+    <div content seed="541">
+        <hr>
+        <p>×; [↑]</p>
+        <p>かま2</p>
+    </div>
+    <div content seed="542">
+        <hr>
+        <p>×; [→↑]</p>
+        <p>がいこつ3さま1</p>
+    </div>
+    <div content seed="543">
+        <hr>
+        <p>〇; [↑]; ブライHP36,すばやさ10以上</p>
+        <p>かま2</p>
+    </div>
+    <div content seed="544">
+        <hr>
+        <p>×; [↓←]</p>
+        <p>かま1</p>
+    </div>
+    <div content seed="545">
+        <hr>
+        <p>◎; [↓]</p>
+        <p>メタ1</p>
+    </div>
+    <div content seed="546">
+        <hr>
+        <p>×; [←↑]</p>
+        <p>かま2</p>
+    </div>
+    <div content seed="547">
+        <hr>
+        <p>×; [→]</p>
+        <p>さそ4</p>
+    </div>
+    <div content seed="548">
+        <hr>
+        <p>×; [→↓]</p>
+        <p>かま1</p>
+    </div>
+    <div content seed="549">
+        <hr>
+        <p>×; [←]</p>
+        <p>がいこつ2</p>
+    </div>
+    <div content seed="550">
+        <hr>
+        <p>〇; [↑←]</p>
+        <p>メタ1</p>
+    </div>
+    <script type="text/javascript" src=".js"></script>
+</body>
